@@ -34,18 +34,18 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 #MODEL_PATH = './models/artist2020.h5'
 
 #download from dropbox 
-#export_file_url = 'https://www.dropbox.com/s/jon8u6mt8wbzt0f/export.pkl?dl=0'
-#export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/6x1tw8h2hkucdx8/export_skin_cancer.pkl?dl=0'
+export_file_name = 'export_skin_cancer.pkl'
 #folder_path='./model/'
-#import requests
-#headers = {'user-agent': 'Wget/1.16 (linux-gnu)'}
-#r = requests.get(export_file_url, stream=True, headers=headers)
-#with open(export_file_name, 'wb') as f:
-   # for chunk in r.iter_content(chunk_size=1024): 
-       # if chunk:
-          #  f.write(chunk)
+import requests
+headers = {'user-agent': 'Wget/1.16 (linux-gnu)'}
+r = requests.get(export_file_url, stream=True, headers=headers)
+with open(export_file_name, 'wb') as f:
+    for chunk in r.iter_content(chunk_size=1024): 
+        if chunk:
+            f.write(chunk)
 #
-model_mask='./model/export_skin_cancer.pkl'
+model_mask='export_skin_cancer.pkl'
 learn_inf = load_learner(model_mask)
 print('Model loading...')
 #model=load_model(MODEL_PATH)
