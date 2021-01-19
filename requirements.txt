@@ -1,0 +1,6 @@
+Flask==0.12.3 
+gunicorn==19.6.0
+numpy==1.16.5
+gevent
+Werkzeug
+fastai==2.1.10

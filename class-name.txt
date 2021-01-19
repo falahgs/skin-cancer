@@ -1,0 +1,17 @@
+ nv='Melanocytic nevi',          # common mole
+    mel='Melanoma',              # very bad
+    bkl='Benign keratosis',      # benign is good
+    bcc='Basal cell carcinoma',  # not so good
+    akiec='Actinic keratoses',   # potential precancer
+    vasc='Vascular lesions',     # could be benign or malignant
+    df='Dermatofibroma',         # benign
+	
+1- Actinic keratoses
+2- Basal cell carcinoma
+3- Benign keratosis
+4- Dermatofibroma
+5- Melanocytic nevi
+6- Melanoma
+7- Vascular lesions
+
+---------------------------------------------------------------------

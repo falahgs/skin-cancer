@@ -1,0 +1,117 @@
+download git foe windows 
+https://git-scm.com/download/win
+
+heroku account
+https://dashboard.heroku.com/apps
+digital_fgs@yahoo.com
+Iraq2016
+--------------
+falahgs07@gmail.com
+Iraq2016
+------------
+
+ https://numberpersons2019.herokuapp.com/
+ 
+ -----------
+ 
+ Falahgs Slieh
+falahgsbaghdad2016@gmail.com
+Iraq2016Baghdad2016
+
+
+----------------
+
+heroku
+
+email:falahgsbaghdad2016@gmail.com
+password: Iraq2016@
+
+
+-------------------------
+ 
+1.git init
+ heroku git:remote -a  mask-no-mask2020
+2.git config user.name "someone"
+3.git config user.email "someone@someplace.com"
+4.git add *
+5.git commit -m "some init msg"
+6-git push heroku master
+
+
+// to check run app: 
+heroku run python app.py --app musicians2018
+
+
+
+// after change any file 
+git add .
+git commit -m "update"
+git push heroku master
+
+----------
+# tocheck 
+heroku logs --tail 
+
+# to load clone myapp into my pc 
+heroku git:clone -a myapp
+
+
+#git init
+git add --all
+git commit -m "init"
+
+heroku apps:create YOUR-APP-NAME
+heroku buildpacks:add https://github.com/gaborvecsei/conda-buildpack
+
+git push heroku master
+
+heroku ps:scale web=1
+
+
+---------------
+colab google mount to google drive 
+
+from google.colab import drive
+drive.mount('/content/drive/')
+
+---------------
+to see all my files in heroku web site
+
+heroku login
+heroku run bash
+$ cd app
+
+--------------
+
+to get download
+-----------
+
+heroku git:clone -a APP-NAME
+
+
+--------------
+
+
+to delete app
+
+heroku apps:destroy
+
+// to delete catch 
+
+ heroku plugins:install heroku-repo
+$ heroku repo:purge_cache -a appname
+$ git commit --allow-empty -m "Purge cache"
+$ git push heroku master
+
+
+-----------------
+pip install h5py==2.8.0rc1 
+
+
+python -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 2
+
+
+
+
+
+

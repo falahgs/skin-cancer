@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+
+<h3 align='center'>Deep Learning Image Classification with Fastai</h3>
+<h3 align='center'>Prediction Mask no Mask</h3>
+<h4 align='center'>by Using ResNet34 model</h4>
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data"  align='center'>
+        <label for="imageUpload" class="upload-label"  align='center'>
+            Choose...
+        </label>
+        <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;" align='center'>
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict"  align='center'>Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h4 id="result"  align='center'>
+        <span> </span>
+    </h4>
+	
+
+</div>
+
+{% endblock %}

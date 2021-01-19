@@ -1,0 +1,42 @@
+<html dir="ltr">
+<title>prediction of artist </title>
+<!-- stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<div class="row">
+ 
+  <div class="col-md-10">
+    <h3 align="center" ><b>prediction of artist name for  portrait</b></h3>
+    <h3 align="center"><b></b></h3>
+	 <h3 align="center"><b></b></h3>
+	
+    <form action="" method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
+    <h4 align="center"><b>Results</b> </h4>
+    <br>
+        <table class="table" id="results-table">
+        <tr>
+          <th><h4><b>Image</b></h4></th>
+          <th> <h4><b>Prediction</b></h4></th>
+        </tr>
+		<tr>
+          {% block content %}{% endblock %}
+        </tr>
+    </table>
+    
+  </div>
+ 
+</div>
+<footer>
+<b>
+  <p>Programming by: Falah G.Salieh</p>
+  <p>FaceBook Page: <a href="https://goo.gl/S25GYo">FaceBook Page </a>.</p>
+  <p>Web Site : <a href="https://iraqprogrammer.wordpress.com/">Iraqi Programmwe Web Site </a>.</p>
+  </b>
+</footer>
+</html>
+ 

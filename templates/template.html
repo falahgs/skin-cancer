@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block content %}
+<th>
+<img width="300px" height="200px" src="{{imagesource}}" />
+</th>
+<th>
+<h4><b>The Artist Name is :{{label}} </b></h4>
+Please Visit Google Web Site
+<a href="https://www.google.iq/search?q={{label}}  " target="_blank"> {{label}}</a>
+</br>
+</br>
+Please Visit YouTube Web Site 
+<a href="https://www.youtube.com/results?search_query={{label}} " target="_blank"> {{label}}</a>
+
+</th>
+
+{% endblock %}
